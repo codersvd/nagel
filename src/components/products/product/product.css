@@ -1,0 +1,22 @@
+.product-item {
+    background: #fff;
+    border-radius: 4px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    cursor: pointer;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.product-item .product-category {
+    color: #8492A6;
+    font-size: 14px;
+    min-width: 13vw;
+    text-align: right;
+}

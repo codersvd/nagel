@@ -1,0 +1,39 @@
+.p-datascroller .p-datascroller-content {
+    background: none !important;
+    padding: 0 !important;
+}
+
+.product-search {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.product-search h2 {
+    font-size: 16px;
+    color: #3C4858;
+    padding: 13px 24px;
+    margin: 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.search-filter {
+    padding: 20px 30px;
+}
+
+.search-input, .search-input input {
+    width: 50vw;
+}
+.search-input input, .p-multiselect {
+    background: #F5F6F7 !important;
+}
+.filter-categories {
+    width: 25vw;
+}
+
+.no-data {
+    background: #fff;
+    padding: 18px 24px;
+    text-align: center;
+    margin: 8px 0;
+    border-radius: 4px;
+}

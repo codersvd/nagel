@@ -1,0 +1,20 @@
+.no-tags {
+    font-size: 0;
+}
+
+.product-tags {
+    padding: 0;
+    margin: 8px 0 0 0;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.product-tags li {
+    background: rgba(18, 184, 255, 0.25);
+    color: #12B8FF;
+    padding: 4px 5px;
+    margin: 3px 5px 3px 0px;
+    font-size: 12px;
+    border-radius: 4px;
+}
