@@ -9,7 +9,7 @@ const ProductTags = (props: { tags: string[] }) => {
         );
     }
 
-    if(props.tags && props.tags.length > 0){
+    if(props.tags && props.tags.length){
         listTags = <ul aria-label="product-tags" className="product-tags">{listItems(props.tags)}</ul>;
     }
 

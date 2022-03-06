@@ -19,7 +19,7 @@ export class ProductService {
         return this.getProducts().then(items => {
             return items.filter(obj => {
                 const searchTitleResult = obj.productName.toLowerCase().includes(search.toLowerCase());
-                const categoriesResult = category.length > 0 ? category.includes(obj.category) : true;
+                const categoriesResult = category.length ? category.includes(obj.category) : true;
 
                 return searchTitleResult && categoriesResult;
             });

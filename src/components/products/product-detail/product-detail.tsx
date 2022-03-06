@@ -13,6 +13,8 @@ const ProductDetail = (props: { productId: string | number }) => {
     useEffect(() => {
         productService.getProductById(props.productId).then((data: IProduct) => {
             setProduct(data);
+        }).catch((error) => {
+            console.error(error);
         });
     });
 

@@ -28,6 +28,8 @@ const Products = () => {
     useEffect(() => {
         productService.getProducts().then((data: IProduct[]) => {
             setProducts(data);
+        }).catch((error) => {
+            console.error(error);
         });
     }, []);
 
