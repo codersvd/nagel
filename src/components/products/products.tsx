@@ -7,6 +7,8 @@ import "./products.css";
 import Product from "./product/product";
 import {InputText} from "primereact/inputtext";
 import {MultiSelect} from 'primereact/multiselect';
+import {ScrollPanel} from "primereact/scrollpanel";
+import {ScrollTop} from "primereact/scrolltop";
 
 const Products = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
@@ -72,10 +74,12 @@ const Products = () => {
 
                     </div>
                 </div>
-                <DataScroller ref={ds} value={products} itemTemplate={itemTemplate} rows={5}
-                              loader footer={footer}
-                              emptyMessage={<div className="shadow-1 no-data">No data</div>}
-                />
+
+                    <DataScroller ref={ds} value={products} itemTemplate={itemTemplate} rows={5}
+                                  loader footer={footer}
+                                  emptyMessage={<div className="shadow-1 no-data">No data</div>}
+                    />
+                    <ScrollTop threshold={100} className="custom-scrolltop" icon="pi pi-arrow-up"/>
             </div>
         </div>
     );
